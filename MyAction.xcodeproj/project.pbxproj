@@ -759,7 +759,7 @@
 				8384411A1E8EEA60000AC4E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		8384411B1E8EEA60000AC4E4 /* Build configuration list for PBXNativeTarget "MyAction" */ = {
 			isa = XCConfigurationList;
@@ -768,7 +768,7 @@
 				8384411D1E8EEA60000AC4E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		8384411E1E8EEA60000AC4E4 /* Build configuration list for PBXNativeTarget "MyActionTests" */ = {
 			isa = XCConfigurationList;
@@ -777,7 +777,7 @@
 				838441201E8EEA60000AC4E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		838441211E8EEA60000AC4E4 /* Build configuration list for PBXNativeTarget "MyActionUITests" */ = {
 			isa = XCConfigurationList;
@@ -786,7 +786,7 @@
 				838441231E8EEA60000AC4E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		83FB4BEC1E92BCFB00EEE654 /* Build configuration list for PBXNativeTarget "testDecimalTab" */ = {
 			isa = XCConfigurationList;
@@ -795,7 +795,7 @@
 				83FB4BE71E92BCFB00EEE654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		83FB4BED1E92BCFB00EEE654 /* Build configuration list for PBXNativeTarget "testDecimalTabTests" */ = {
 			isa = XCConfigurationList;
@@ -804,7 +804,7 @@
 				83FB4BE91E92BCFB00EEE654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		83FB4BEE1E92BCFB00EEE654 /* Build configuration list for PBXNativeTarget "testDecimalTabUITests" */ = {
 			isa = XCConfigurationList;
@@ -813,7 +813,7 @@
 				83FB4BEB1E92BCFB00EEE654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

@@ -49,13 +49,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var n = Double(1)
         //let test = verif(n: n)
         //print(test)
+        //var verifN : Bool = false
         
         while ((verif(n: n)) == false){
             n = n+1
-          
         }
-        
-        _ = Double(SimulationPrix(n: n))
         
     }
     
@@ -73,10 +71,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func CalculPrixFinal(prixHT: Double) -> Double{
         let prixFin: Double = (prixHT*1.0068)*1.02
-        if(prixHT == 0){
-            return 0.0
-        }
-            else if ((prixFin-prixHT) < 7.5){
+        if ((prixFin-prixHT) < 7.5){
                 return ((prixHT+7.5)*1.02)
             }else{
                 return prixFin
@@ -100,19 +95,24 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
         //on calcule le prix TTC
         //let prixTTC: Double = CalculPrixFinal(prixHT: prixHT)
-        let prixfinal = Double(CalculPrixFinal(prixHT: prixHT))
+        //let prixfinal = Double(CalculPrixFinal(prixHT: prixHT))
+        var prixfinal = Double(prixHT*1.0068*1.02)
+        if ((prixfinal-prixHT)<7.5){
+            prixfinal = (prixHT+7.5)*1.02
+        }
         Affichage3.text = "Prix TTC= \(prixfinal) €"
 
         //on calcule le prix de l action apres achat, il faut prendre en compte la taxe
         let prixActionFinal = prixfinal/nbaction
         Affichage4.text = "Votre action est évalue à \(prixActionFinal) €"
         
-        return prixHT
+        return prixfinal
     }
     
     func verif(n: Double) -> Bool{
         
         ///reduction
+      
         let prixTTC = Double(SimulationPrix(n: n))
         if (prixTTC > Double(PorteFeuille.text!)!){
             return false
@@ -120,6 +120,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         else {
             return true
         }
+        
+        
     }
     @IBAction func relancer(_ sender: AnyObject) {
         PrixAction.text = ""
