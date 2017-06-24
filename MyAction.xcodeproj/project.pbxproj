@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		837C78521EFE502A0040E7AC /* SimulationPrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C78511EFE502A0040E7AC /* SimulationPrix.swift */; };
 		838440F71E8EEA5F000AC4E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838440F61E8EEA5F000AC4E4 /* AppDelegate.swift */; };
 		838440F91E8EEA5F000AC4E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838440F81E8EEA5F000AC4E4 /* ViewController.swift */; };
 		838440FC1E8EEA5F000AC4E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838440FA1E8EEA5F000AC4E4 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		838441011E8EEA5F000AC4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838440FF1E8EEA5F000AC4E4 /* LaunchScreen.storyboard */; };
 		8384410C1E8EEA60000AC4E4 /* MyActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384410B1E8EEA60000AC4E4 /* MyActionTests.swift */; };
 		838441171E8EEA60000AC4E4 /* MyActionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838441161E8EEA60000AC4E4 /* MyActionUITests.swift */; };
+		83DC80DC1EEDAB100091B65F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83DC80DB1EEDAAC30091B65F /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		837C78511EFE502A0040E7AC /* SimulationPrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationPrix.swift; sourceTree = "<group>"; };
 		838440F31E8EEA5F000AC4E4 /* MyAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838440F61E8EEA5F000AC4E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		838440F81E8EEA5F000AC4E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		838441121E8EEA60000AC4E4 /* MyActionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyActionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		838441161E8EEA60000AC4E4 /* MyActionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActionUITests.swift; sourceTree = "<group>"; };
 		838441181E8EEA60000AC4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83DC80DB1EEDAAC30091B65F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		83FB4BC11E92BCFA00EEE654 /* testDecimalTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testDecimalTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FB4BD41E92BCFB00EEE654 /* testDecimalTabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testDecimalTabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FB4BDF1E92BCFB00EEE654 /* testDecimalTabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testDecimalTabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +119,7 @@
 		838440EA1E8EEA5F000AC4E4 = {
 			isa = PBXGroup;
 			children = (
+				83DC80DB1EEDAAC30091B65F /* Default-568h@2x.png */,
 				838440F51E8EEA5F000AC4E4 /* MyAction */,
 				8384410A1E8EEA60000AC4E4 /* MyActionTests */,
 				838441151E8EEA60000AC4E4 /* MyActionUITests */,
@@ -140,6 +145,7 @@
 			children = (
 				838440F61E8EEA5F000AC4E4 /* AppDelegate.swift */,
 				838440F81E8EEA5F000AC4E4 /* ViewController.swift */,
+				837C78511EFE502A0040E7AC /* SimulationPrix.swift */,
 				838440FA1E8EEA5F000AC4E4 /* Main.storyboard */,
 				838440FD1E8EEA5F000AC4E4 /* Assets.xcassets */,
 				838440FF1E8EEA5F000AC4E4 /* LaunchScreen.storyboard */,
@@ -282,23 +288,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Henri Aycard";
 				TargetAttributes = {
 					838440F21E8EEA5F000AC4E4 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3V6RPGRS3X;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					838441061E8EEA60000AC4E4 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3V6RPGRS3X;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 838440F21E8EEA5F000AC4E4;
 					};
 					838441111E8EEA60000AC4E4 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3V6RPGRS3X;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 838440F21E8EEA5F000AC4E4;
 					};
@@ -373,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83DC80DC1EEDAB100091B65F /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +409,7 @@
 			files = (
 				838440F91E8EEA5F000AC4E4 /* ViewController.swift in Sources */,
 				838440F71E8EEA5F000AC4E4 /* AppDelegate.swift in Sources */,
+				837C78521EFE502A0040E7AC /* SimulationPrix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +504,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -501,7 +514,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -543,7 +560,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -551,7 +570,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -582,11 +605,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3V6RPGRS3X;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = MyAction/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Henri-Aycard.MyAction";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -596,11 +621,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3V6RPGRS3X;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = MyAction/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Henri-Aycard.MyAction";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -615,7 +642,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Henri-Aycard.MyActionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyAction.app/MyAction";
 			};
 			name = Debug;
@@ -630,7 +658,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Henri-Aycard.MyActionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyAction.app/MyAction";
 			};
 			name = Release;
@@ -644,7 +673,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Henri-Aycard.MyActionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = MyAction;
 			};
 			name = Debug;
@@ -658,7 +688,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Henri-Aycard.MyActionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = MyAction;
 			};
 			name = Release;

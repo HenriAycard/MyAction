@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FBE65A21B5FF009CB80672CAEA21C119533FE6DB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FBE65A21B5FF009CB80672CAEA21C119533FE6DB" : 9223372036854775807,
+    "DBD6DB1515215097118B1270C640FB82FF5FC222" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DFD417CE-73B7-4A6F-B206-8CEC63C7671F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FBE65A21B5FF009CB80672CAEA21C119533FE6DB" : "MyAction\/",
+    "DBD6DB1515215097118B1270C640FB82FF5FC222" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MyAction",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MyAction.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:HenriAycard\/SQL_Carte.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DBD6DB1515215097118B1270C640FB82FF5FC222"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:HenriAycard\/MyAction.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FBE65A21B5FF009CB80672CAEA21C119533FE6DB"
+    }
+  ]
+}
