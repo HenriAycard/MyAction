@@ -21,6 +21,9 @@ class SimulationPrix{
     var PrixRevient: Double
     
     init(PorteF: Double, PrixA: Double, Tax: Double){
+        
+        //PorteFeuille = PorteF.DoublePorteF
+        //PrixAction = PrixA.DoublePrixA
         PorteFeuille = PorteF
         PrixAction = PrixA
         Taxe = Tax
@@ -34,8 +37,8 @@ class SimulationPrix{
     
     func start(n: Double){
     
-        if (verifValeur() == true){
-            print("Aucune erreur")
+        if (verifValeur() == true) && (verifValeur2() == true){
+            print("Aucune erreur \(PorteFeuille) \(PrixAction)")
             Reduc = 1-(n/100)
             //on calcule l argent en enlevant un pourcentage car il faudra prendre un compte la taxe à la fin
             Argent = Calculargent()
@@ -50,7 +53,7 @@ class SimulationPrix{
             //on calcule le prix TTC
             //let prixTTC: Double = CalculPrixFinal(prixHT: prixHT)
             //let prixfinal = Double(CalculPrixFinal(prixHT: prixHT))
-            PrixFinal = PrixHT*1.0068*1.02
+            PrixFinal = PrixHT*Taxe
             if ((PrixFinal-PrixHT)<7.5){
                 PrixFinal = (PrixHT+7.5)*1.02
             }
@@ -62,13 +65,28 @@ class SimulationPrix{
         }
     }
     
+    func setValeur(val: String, val2: String){
+        PorteFeuille = val.DoublePorteF
+        PrixAction = val2.DoublePrixA
+    }
+    
+    
+    
+    
     func verifValeur()-> Bool{
         if PorteFeuille<PrixAction{
             return false
         }else{
             return true
         }
-        
+    }
+    
+    func verifValeur2()-> Bool{
+        if PorteFeuille<(PrixAction+7.5){
+            return false
+        }else{
+            return true
+        }
     }
     
     func Calculargent() -> Double{
@@ -82,6 +100,7 @@ class SimulationPrix{
     func CalculPrixHT() -> Double{
         return NbAction*PrixAction
     }
- 
-    
 }
+
+
+

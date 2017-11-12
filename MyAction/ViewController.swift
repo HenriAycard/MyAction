@@ -31,61 +31,115 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    
     @IBOutlet weak var PorteFeuille: UITextField!
     @IBOutlet weak var PrixAction: UITextField!
     
     @IBOutlet weak var Affichage1: UILabel!
-    @IBOutlet weak var Affichage2: UILabel!
-    @IBOutlet weak var Affichage3: UILabel!
-    @IBOutlet weak var Affichage4: UILabel!
     
+    @IBOutlet weak var LaTaxe: UITextField!
     
-    
-    @IBAction func Lancement(_ sender: AnyObject){
- 
 
+    @IBAction func Lancement(_ sender: AnyObject){
+        
+        
         var n = Double(1)
-        let tax = Double(0)
-        let SimulPrix = SimulationPrix(PorteF: Double(PorteFeuille.text!)!, PrixA: Double(PrixAction.text!)!, Tax: tax)
-       
+        var tax = Double(1.0068*1.02)
+        
+        //let StringPorteF: String = PorteFeuille.text!
+        //let StringPrixA: String = PrixAction.text!
+        let DPorteF: Double = (PorteFeuille.text!).DoublePorteF
+        let DPrixA: Double = (PrixAction.text!).DoublePrixA
+        
         if ((PorteFeuille.text?.isEmpty) != false || (PrixAction.text?.isEmpty) != false) {
             PrixAction.text = ""
             PorteFeuille.text = ""
             Affichage1.text = "Aucune Valeur Saisi"
-            Affichage2.text = "Aucune Valeur Saisi"
-            Affichage3.text = "Aucune Valeur Saisi"
-            Affichage4.text = "Aucune Valeur Saisi"
-        }
-        else {
+        }else if (DPorteF <= 0 || DPrixA <= 0){
+            PrixAction.text = ""
+            PorteFeuille.text = ""
+            Affichage1.text = "Valeur Negative"
+        }else{
+            
+            
+            if(LaTaxe.text?.isEmpty)!{
+                tax = ((1+((LaTaxe.text!.DoublePorteF)/100)) * 1.02)
+            
+            let SimulPrix = SimulationPrix(PorteF: DPorteF, PrixA: DPrixA, Tax: tax)
+            
             repeat{
                 SimulPrix.start(n: n)
-                Affichage1.text = "Vous pouvez acheter \(SimulPrix.NbAction) actions"
-                Affichage2.text = "Prix HT= \(SimulPrix.PrixHT) €"
-                Affichage3.text = "Prix TTC= \(SimulPrix.PrixFinal) €"
-                Affichage4.text = "Votre action est évalue à \(SimulPrix.PrixRevient) €"
-                n = n+1
-            } while ((TestReduction(n: n,SimulPrix: SimulPrix)) == false)
+                Affichage1.text = "Vous pouvez acheter \(SimulPrix.NbAction) actions \nPrix HT= \(SimulPrix.PrixHT) €\nPrix TTC= \(SimulPrix.PrixFinal) € \nVotre action est évalue à \(SimulPrix.PrixRevient) €"
+                n = n + 1
+            } while ((TestReduction(n: n,SimulPrix: SimulPrix, PorteF: DPorteF)) == false)
+                
+            }else{
+                let SimulPrix = SimulationPrix(PorteF: DPorteF, PrixA: DPrixA, Tax: tax)
+                
+                repeat{
+                    SimulPrix.start(n: n)
+                    Affichage1.text = "Vous pouvez acheter \(SimulPrix.NbAction) actions \nPrix HT= \(SimulPrix.PrixHT) €\nPrix TTC= \(SimulPrix.PrixFinal) € \nVotre action est évalue à \(SimulPrix.PrixRevient) €"
+                    n = n + 1
+                } while ((TestReduction(n: n,SimulPrix: SimulPrix, PorteF: DPorteF)) == false)
+                
+            }
+                
+                
+            
         }
     }
     
-    func TestReduction(n: Double, SimulPrix: SimulationPrix) -> Bool{
+    func TestReduction(n: Double, SimulPrix: SimulationPrix, PorteF: Double) -> Bool{
         ///reduction
         let PrixFinal = SimulPrix.PrixFinal
-        if (PrixFinal > Double(PorteFeuille.text!)!){
+        if (PrixFinal > PorteF){
             return false
         }else {
             return true
         }
     }
     
+    /*
+     @IBOutlet weak var PrixActionVente: UITextField!
+     @IBOutlet weak var NbActionVente: UITextField!
+     @IBOutlet weak var TaxeVente: UITextField!
+     @IBOutlet weak var PrixActionAchat: UITextField!
+     */
     
     @IBAction func relancer(_ sender: AnyObject) {
         PrixAction.text = ""
         PorteFeuille.text = ""
         Affichage1.text = ""
-        Affichage2.text = ""
-        Affichage3.text = ""
-        Affichage4.text = ""
+
     }
    
+}
+
+extension String{
+    var DoublePorteF: Double {
+        let nf = NumberFormatter()
+        nf.decimalSeparator = "."
+        if let result = nf.number(from: self) {
+            return result.doubleValue
+        }else {
+            nf.decimalSeparator = ","
+            if let result = nf.number(from: self) {
+                return result.doubleValue
+            }
+        }
+        return 0
+    }
+    var DoublePrixA: Double {
+        let nf = NumberFormatter()
+        nf.decimalSeparator = "."
+        if let result = nf.number(from: self) {
+            return result.doubleValue
+        } else {
+            nf.decimalSeparator = ","
+            if let result = nf.number(from: self) {
+                return result.doubleValue
+            }
+        }
+        return 0
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83724D531F927B0A002507E2 /* prixVente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83724D521F927B0A002507E2 /* prixVente.swift */; };
 		837C78521EFE502A0040E7AC /* SimulationPrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C78511EFE502A0040E7AC /* SimulationPrix.swift */; };
 		838440F71E8EEA5F000AC4E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838440F61E8EEA5F000AC4E4 /* AppDelegate.swift */; };
 		838440F91E8EEA5F000AC4E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838440F81E8EEA5F000AC4E4 /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 		838441011E8EEA5F000AC4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838440FF1E8EEA5F000AC4E4 /* LaunchScreen.storyboard */; };
 		8384410C1E8EEA60000AC4E4 /* MyActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384410B1E8EEA60000AC4E4 /* MyActionTests.swift */; };
 		838441171E8EEA60000AC4E4 /* MyActionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838441161E8EEA60000AC4E4 /* MyActionUITests.swift */; };
+		8395F1CE1F93639200E7B8CA /* mainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395F1CD1F93639200E7B8CA /* mainAction.swift */; };
 		83DC80DC1EEDAB100091B65F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83DC80DB1EEDAAC30091B65F /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83724D521F927B0A002507E2 /* prixVente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prixVente.swift; sourceTree = "<group>"; };
 		837C78511EFE502A0040E7AC /* SimulationPrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationPrix.swift; sourceTree = "<group>"; };
 		838440F31E8EEA5F000AC4E4 /* MyAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838440F61E8EEA5F000AC4E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		838441121E8EEA60000AC4E4 /* MyActionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyActionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		838441161E8EEA60000AC4E4 /* MyActionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActionUITests.swift; sourceTree = "<group>"; };
 		838441181E8EEA60000AC4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8395F1CD1F93639200E7B8CA /* mainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainAction.swift; sourceTree = "<group>"; };
 		83DC80DB1EEDAAC30091B65F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		83FB4BC11E92BCFA00EEE654 /* testDecimalTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testDecimalTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FB4BD41E92BCFB00EEE654 /* testDecimalTabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testDecimalTabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,11 +149,13 @@
 			children = (
 				838440F61E8EEA5F000AC4E4 /* AppDelegate.swift */,
 				838440F81E8EEA5F000AC4E4 /* ViewController.swift */,
+				83724D521F927B0A002507E2 /* prixVente.swift */,
 				837C78511EFE502A0040E7AC /* SimulationPrix.swift */,
 				838440FA1E8EEA5F000AC4E4 /* Main.storyboard */,
 				838440FD1E8EEA5F000AC4E4 /* Assets.xcassets */,
 				838440FF1E8EEA5F000AC4E4 /* LaunchScreen.storyboard */,
 				838441021E8EEA5F000AC4E4 /* Info.plist */,
+				8395F1CD1F93639200E7B8CA /* mainAction.swift */,
 			);
 			path = MyAction;
 			sourceTree = "<group>";
@@ -409,7 +415,9 @@
 			files = (
 				838440F91E8EEA5F000AC4E4 /* ViewController.swift in Sources */,
 				838440F71E8EEA5F000AC4E4 /* AppDelegate.swift in Sources */,
+				8395F1CE1F93639200E7B8CA /* mainAction.swift in Sources */,
 				837C78521EFE502A0040E7AC /* SimulationPrix.swift in Sources */,
+				83724D531F927B0A002507E2 /* prixVente.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,11 +615,11 @@
 				DEVELOPMENT_TEAM = 3V6RPGRS3X;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = MyAction/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Henri-Aycard.MyAction";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -623,11 +631,11 @@
 				DEVELOPMENT_TEAM = 3V6RPGRS3X;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = MyAction/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Henri-Aycard.MyAction";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -642,7 +650,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Henri-Aycard.MyActionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyAction.app/MyAction";
 			};
@@ -658,7 +666,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Henri-Aycard.MyActionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyAction.app/MyAction";
 			};
@@ -673,7 +681,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Henri-Aycard.MyActionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = MyAction;
 			};
@@ -688,7 +696,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Henri-Aycard.MyActionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = MyAction;
 			};
